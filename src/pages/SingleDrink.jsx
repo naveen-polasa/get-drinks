@@ -67,13 +67,13 @@ const SingleCocktail = () => {
     drink;
 
   return (
-    <section className="w-[80%] lg:w-[66%] mx-auto text-center">
+    <section className="w-[99x%] lg:w-[66%] mx-auto text-center">
       <h2 className="text-3xl my-5">{name} </h2>
-      <div className="lg:flex items-center">
-        <div className="w-96 mx-auto my-6 ">
+      <div className="lg:flex items-center gap-x-12">
+        <div className="w-72 md:w-96 mx-auto my-6 ">
           <img src={image} alt={name} className="" />
         </div>
-        <div className="text-xl m-2 text-start flex flex-col gap-6 mx-12 w-[50%]">
+        <div className="text-xl m-2 mx-auto  text-start flex flex-col gap-6 w-[70%] lg:w-[50%]">
           <p>
             <span className="bg-lime-200 rounded-md px-1 font-semibold mr-3">
               Name:
