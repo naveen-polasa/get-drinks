@@ -65,7 +65,7 @@ const SingleCocktail = () => {
   }
   const { name, image, category, info, glass, instructions, ingredients } =
     drink;
-
+  console.log(ingredients);
   return (
     <section className="w-[99x%] lg:w-[66%] mx-auto text-center">
       <h2 className="text-3xl my-5">{name} </h2>
@@ -109,8 +109,8 @@ const SingleCocktail = () => {
               Ingredients:
             </span>
             {ingredients.map((item, index) => {
-              return item && <span key={index}>{item}</span>;
-            })}
+              return item && <span key={index}>{item} </span>;
+            })}{" "}
           </p>
         </div>
       </div>
